@@ -1,5 +1,1 @@
-<?php
-
-	header('Location: images/');
-	
-?>
+<?php header('Location: images/'); ?>
