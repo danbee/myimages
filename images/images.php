@@ -33,7 +33,7 @@
 			$imageurl = $prot . '://' . $host . $root . '/image.php?user=' . $user . '&amp;image=' . $file;
 			echo	'<li><div class="image">' .
 					'<a class="imagedel" href="?action=del&image='.$file.'"></a>' .
-					'<a rel="userimages" class="imagelink" href="'.$imageurl.'&size=580" title="'.htmlentities($imageurl).'">' .
+					'<a rel="userimages" class="imagelink" href="'.$imageurl.'&size=600" title="'.htmlentities($imageurl).'">' .
 					'<img src="', $imageurl, '&size=96" />' .
 					'</a>' .
 					'</div>' .
