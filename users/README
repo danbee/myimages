@@ -1,0 +1,1 @@
+This directory is where the users images get stored. Each user will get their own directory. Needs to be writeable by the webserver.
