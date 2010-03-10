@@ -1,0 +1,9 @@
+syntax: glob
+imagecache/*.png
+imagecache/*.jpg
+imagecache/*.jpeg
+imagecache/*.gif
+
+users/*
+
+images/.htaccess
