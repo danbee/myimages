@@ -30,9 +30,9 @@
 	while (($file = readdir($dir)) !== false) {
 		$filetype = substr($file, -3);
 		if (preg_match('/(png|gif|jpe?g)/i', $filetype)) {
-			$imageurl = $prot . '://' . $host . $root . '/image.php?user=' . $user . '&amp;image=' . $file;
+			$imageurl = $prot . '://' . $host . $root . '/image.php?user=' . $user . '&amp;image=' . urlencode($file);
 			echo	'<li><div class="image">' .
-					'<a class="imagedel" href="?action=del&image='.$file.'"></a>' .
+					'<a class="imagedel" href="?action=del&image='.urlencode($file).'"></a>' .
 					'<a rel="userimages" class="imagelink" href="'.$imageurl.'&size=600" title="'.htmlentities($imageurl).'">' .
 					'<img src="', $imageurl, '&size=96" />' .
 					'</a>' .
